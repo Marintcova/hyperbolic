@@ -5,10 +5,10 @@ import logging
 # Конфигурация API Hyperbolic
 HYPERBOLIC_API_URL = "https://api.hyperbolic.xyz/v1/chat/completions"
 HYPERBOLIC_API_KEY = "$API_KEY"  # Замените на ваш API-ключ
-MODEL = "NousResearch/Hermes-3-Llama-3.1-70B"      # Или укажите нужную модель
-MAX_TOKENS = 2048
-TEMPERATURE = 0.7
-TOP_P = 0.9
+"model": "Qwen/QwQ-32B",
+    "max_tokens": 1024,
+    "temperature": 0.6,
+    "top_p": 0.95
 DELAY_BETWEEN_QUESTIONS = 15  # задержка между вопросами в секундах
 
 logging.basicConfig(level=logging.INFO)
